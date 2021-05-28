@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- inspired by https://droitthemes.com/wp/mak/home-dark/ , recreation of similar website for educational purposes. -->
+	<head>
+		<meta charset="UTF-8" >
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+		<meta name="description" content="Portfolio Website Template, Coding after Thirty Community Project">
+		<meta name="keywords" content="Portfolio Website, Template">
+		<title>Community Project Coding After Thirty</title>
+		<link rel="stylesheet" href="css/style.css" >
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+		<script
+			src="https://kit.fontawesome.com/31ec6fbc97.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<!-- grid container -->
+		<div class="page-container" id="page-container">
+			<!--  Logo and menu -->
+			<nav class="navbar"> 
+				<div class="navbar-logo"><a href="index.html">K.</a></div>
+				<button id="open" class="open">
+					<i class="fas fa-bars fa-2x"></i>
+				</button>
+				<ul>
+					<li><a class="navbar-menu" href="/">Home</a></li>
+					<li><a class="navbar-menu" href="#aboutme">About Me</a></li>
+					<li><a class="navbar-menu" href="#services">Services</a></li>
+					<li><a class="navbar-menu" href="#portfolio">Portfolio</a></li>
+					<li><a class="navbar-menu" href="#blog">Blog</a></li>
+					<li><a class="navbar-menu" href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- modal for toggle menu on and off function - smaller screen view -->
+			<div class="modal-container" id="modal">
+					<div class="modal-container-logo"><a href="index.html">K.</a></div>
+					<button class="close-btn" id="close">
+						<i class="fa fa-times fa-2x"></i>
+					</button>
+					<nav>
+						<ul>
+							<li><a class="menu-nav" href="/">Home</a></li>
+							<li><a class="menu-nav" href="#aboutme">About Me</a></li>
+							<li><a class="menu-nav" href="#services">Services</a></li>
+							<li><a class="menu-nav" href="#portfolio">Portfolio</a></li>
+							<li><a class="menu-nav" href="#blog">Blog</a></li>
+							<li><a class="menu-nav" href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+			</div>
+
+			<!--    Introduction section -->
+			<header class="hero" id="hero">
+				<div
+					class="hero-text"
+				>
+					<h1>I'm Katia</h1>
+					<h3>
+						Front-End Web Developer					
+					</h3>
+					<button class="yellow-button">Hire Me</button>
+				</div>
+						
+					<img src="images/katia-img.JPG" alt="Katia" />
+				
+			</header>
+			<!--    About me section -->
+			<section class="about-me" id="aboutme">
+				<h2 class="">About Me</h2>
+				<div
+					class="about-me-content"
+				>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing
+						elit, sed do eiusmod tempor incididunt ut labore et
+						dolore magna aliqua. Ut enim ad minim veniam, quis
+						nostrud exercitation ullamco laboris nisi ut aliquip ex
+						ea commodo consequat. <br />
+						<br />
+						Duis aute irure dolor in reprehenderit in voluptate
+						velit esse cillum dolore eu fugiat nu pariatur excepteur
+						sint occaecat.
+					</p>
+
+					<div class="about-me-buttons">
+						<button class="yellow-button" onclick="document.location='#portfolio'">View Work</button>
+						<button class="grey-button">Download CV</button>
+					</div>
+
+					
+				</div>
+			</section>
+			<!--    Services section -->
+			<section class="services" id="services">
+				<div class="services-text-box">
+					<h2>
+						Services
+					</h2>
+					<p>
+						Excepteur sint occaecat cupidatat non proident, sunt in
+						culpa qui officia deserunt mollit anim id <br />
+						est laborum. Sed ut perspiciatis unde omnis iste natur
+					</p>
+				</div>
+				<div class="services-cards">
+					<div
+						class="card card1">
+						<i class="fas fa-mobile-alt fa-4x"></i>
+						<h3>Consulting</h3>
+						<p>
+							Duis aute irure dolor in reprehenderit in voluptate
+							velit esse cillum dolore eu fugiat
+						</p>
+					</div>
+					<div
+						class="card card2"
+					>
+						<i class="fas fa-window-restore fa-4x"></i>
+						<h3>Web Development</h3>
+						<p>
+							Duis aute irure dolor in reprehenderit in voluptate
+							velit esse cillum dolore eu fugiat
+						</p>
+					</div>
+					<div
+						class="card card3"
+					>
+						<i class="fab fa-apple-pay fa-4x"></i>
+						<h3>Web App Design</h3>
+						<p>
+							Duis aute irure dolor in reprehenderit in voluptate
+							velit esse cillum dolore eu fugiat
+						</p>
+					</div>
+					<div class="card card4">
+						<i class="fas fa-palette fa-4x"></i>
+						<h3>Web Design</h3>
+						<p>
+							Duis aute irure dolor in reprehenderit in voluptate
+							velit esse cillum dolore eu fugiat
+						</p>
+					</div>
+				</div>
+			</section>
+			<!--    Latest Works section -->
+			<section class="latest-works" id="portfolio">
+				<div class="latest-works-text-box">
+					<h2>
+					Portfolio</h2>
+					<p>
+						Excepteur sint occaecat cupidatat non proident, sunt in
+						culpa qui officia deserunt mollit anim id <br />
+						est laborum. Sed ut perspiciatis unde omnis iste natus
+					</p>
+					<ul>
+						<li>All</li>
+						<li>Websites</li>
+						<li>Web Apps</li>
+						<li>Web tools</li>
+						<li>Web Design</li>
+					</ul>
+				</div>
+
+				<div class="latest-works-cards">
+					<div class="cardOne cardhover">
+						<img id="large-img" src="images/card-six.jpg" alt="Latest Works 1" />
+						<div class="overlay1 overlay">
+							<i class="fas fa-search"></i>
+							<h3>Project One</h3>
+							<p>Sub-title</p>
+						</div>
+					</div>
+					<div class="cardTwo cardhover">
+						<img src="images/card-two.jpg" alt="Latest Works 2" />
+						<div class="overlay">
+							<i class="fas fa-search"></i>
+							<h3>Project Two</h3>
+							<p>Sub-title</p>
+						</div>
+					</div>
+					<div class="cardThree cardhover">
+						<img src="images/card-three.jpg" alt="Latest Works 3"/>
+						<div class="overlay">
+							<i class="fas fa-search"></i>
+							<h3>Project Three</h3>
+							<p>Sub-title</p>
+						</div>
+					</div>
+					<div class="cardFour cardhover">
+						<img src="images/card-four.jpg" alt="Latest Works 4"/>
+						<div class="overlay">
+							<i class="fas fa-search"></i>
+							<h3>Project Four</h3>
+							<p>Sub-title</p>
+						</div>
+					</div>
+					<div class="cardFive cardhover">
+						<img src="images/card-five.jpg" alt="Latest Works 5"/>
+						<div class="overlay">
+							<i class="fas fa-search"></i>
+							<h3>Project Five</h3>
+							<p>Sub-title</p>
+						</div>
+					</div>
+					<div class="cardSix cardhover">
+						<img src="images/card-eight.jpg" alt="Latest Works 6"/>
+						<div class="overlay">
+							<i class="fas fa-search"></i>
+							<h3>Project Six</h3>
+							<p>Sub-title</p>
+						</div>
+					</div>
+					<div class="cardSeven cardhover">
+						<img src="images/card-seven.jpg" alt="Latest Works 7"/>
+						<div class="overlay">
+							<i class="fas fa-search"></i>
+							<h3>Project Seven</h3>
+							<p>Sub-title</p>
+						</div>
+					</div>
+					<div class="cardEight cardhover">
+						<img id="wide-img" src="images/card_one.jpg" alt="Latest Works 8"/>
+						<div class="overlay8 overlay">
+							<i class="fas fa-search"></i>
+							<h3>Project Eight</h3>
+							<p>Sub-title</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Reviews Section -->
+			<section class="reviews-section">
+				<div class="reviews">
+					<h2>Reviews</h2>
+
+				</div>
+				<div class="reviews-slider">
+				
+					<div class="slide-container">
+						
+					</div>
+					<!-- Preview Next Button -->
+					<button class="btn prev-btn">
+						<i class="fas fa-chevron-left"></i>
+					</button>
+					<button class="btn next-btn">
+						<i class="fas fa-chevron-right"></i>
+					</button>
+
+				</div>
+			</section>
+
+			   <!-- Work Experiences section -->
+			<section class="work-experiences">
+				
+					<h2>Work Experiences</h2>
+					<p class="center">
+						Excepteur sint occaecat cupidatat non proident, sunt in
+						culpa qui officia deserunt mollit anim id <br> est laborum. Sed
+						ut perspiciatis unde omnis iste natus
+					</p>
+				
+
+				<div class="works-cards-container">
+					<div class="works-card">
+						<div class="date">JUNE 2018 - 2019</div>  
+						<h3>Web Developer</h3>
+						<div class="company">Company inc.</div> 
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu feugiat felis, eu sodales est.</p>
+					</div>
+					<div class="works-card">
+						<div class="date">JUNE 2019 - 2019</div>  
+						<h3>Web Developer</h3> 
+						<div class="company">Company inc.</div> 
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu feugiat felis, eu sodales est. </p>
+					</div>
+					<div class="works-card">
+						<div class="date">JUNE 2020 - PRESENT</div>  
+						<h3>Web Developer</h3> 
+						<div class="company">Company inc.</div> 
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu feugiat felis, eu sodales est.</p>
+					</div>
+				</div>
+					
+				
+			</section>
+
+			<!--    Latest Blogs section -->
+
+			<section class="latest-blogs" id="blog">
+
+				<h2>Latest Blogs</h2>
+				<div class="articles" id="articles">
+					<!-- data dynamically fetched using API  -->
+				</div>
+			</section>
+
+			<!-- Blog Modal -->
+			<div class="blog-modal-container" id="blog-modal">
+				<!-- data dynamically fetched using API  -->
+
+			</div>
+
+			<!--    Hire me section -->
+
+            <section class="hire-me">
+				<h2>Hire Me</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Magnam tempora, libero rerum dolorem provident repellat ad repudiandae eius expedita dicta.</p>
+				<button class="grey-button">Hire Me</button>
+			</section> 
+
+			<!--    Contact me section -->
+
+		    <section class="contact" id="contact">
+				<div class="contact-title">
+					<h2>
+						Contact Me
+
+					</h2>	
+								
+				</div>
+				<div class="contact-info">
+					<h4>Contact Info</h4>
+					<ul>
+						<li><i class="fas fa-search-location"></i>&nbsp; Munich, Germany</li> <br>
+						<li><i class="fas fa-envelope-square"></i>&nbsp;&nbsp;katia@example.com</li> <br>
+						<li><i class="fas fa-phone"></i>&nbsp;&nbsp;+49123456789xxxx <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +49123456789xxx</li> <br> 
+						<li><i class="fas fa-wifi"></i>&nbsp;&nbsp;www.google.com</li> <br>
+						<li><span  class="follow-me"> Follow Me</span></li> <br>
+						<li><span class="follow"> 
+							<a href="#"><i class="fab fa-facebook-f"></i></a> &nbsp; &nbsp;
+							<a href="#"><i class="fab fa-twitter"></i></a> &nbsp; &nbsp;
+							<a href="#"><i class="fab fa-linkedin-in"></i></a> &nbsp; &nbsp;
+							<a href="#"><i class="fab fa-pinterest-p"></i></a> 						
+						</li>
+					</ul>
+				</div>
+				<form class="contact-form" id="form" action="">
+					<label class="contact-form-name-label" for="name">NAME</label>
+  					<input class="contact-form-name-input contact-form-input" type="text" id="name" name="name" placeholder="Full Name" required>			 
+					
+					
+					<label class="contact-form-phone-label" for="number">PHONE NUMBER</label>
+						
+					<input class="contact-form-phone-input contact-form-input" type="tel" id="number" name="phone" placeholder="+49 408XXXXXXX" pattern="^\+(?:[0-9] ?){6,14}[0-9]$" title="Please include international dialling code (e.g. +49) followed by your phone number" required>
+						
+						
+					<label class="contact-form-email-label" for="email">EMAIL</label>
+  					 <input class="contact-form-email-input contact-form-input" type="email" id="email" name="email" placeholder="email@address.com" required>
+						
+										 
+ 					<label class="contact-form-message-label" for="message">YOUR MESSAGE</label>
+ 					<textarea class="contact-form-message-input contact-form-input" minlength="10" id="message" name="message" placeholder="Your Message" cols="40" rows="8" required></textarea> 
+					 
+					
+					 <button class="contact-form-button yellow-button" type="submit"> submit </button>				
+				</form>			
+				<!--  Success Message 
+					hidden by default, only appears when message submitted -->
+					<div class="message-container">
+						<h3>
+							Success! Form submitted
+						</h3>
+
+					</div>
+			</section> 
+		
+			<!--    Closing section -->
+
+			<section class="closing">
+				<div class="closing-logo">K.</div>
+				<p>
+					Excepteur sint occaecat cupidatat non proident, sunt in
+					culpa qui officia <br> deserunt mollit anim id est laborum.
+				</p>
+				<ul>
+					<li><a href=""><i class="fab fa-facebook-square"></i></a>&nbsp;&nbsp;</li> 					
+					<li><a href=""><i class="fab fa-twitter-square"></i></a>&nbsp;&nbsp;</li> 
+					<li><a href=""><i class="fab fa-linkedin"></i></a>&nbsp;&nbsp;</li> 
+					<li><a href=""><i class="fab fa-pinterest-square"></i></a>&nbsp;&nbsp;</li> 
+				</ul>
+				
+			</section>
+			<!--   Footer Section -->
+			<footer>
+				<hr>
+				<p>Built by <a href="#">Katia</a></p>			
+			</footer>
+			<button><i class="fas fa-angle-up fa-3x back-to-top"></i></button>	
+			<script type="module" src="script.js"></script>
+	</body>
+</html>

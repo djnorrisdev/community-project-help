@@ -1,0 +1,57 @@
+.about-me {
+	grid-column: full-start / full-end;
+	display: grid;
+	padding: 10rem 0;
+
+	@media screen and (max-width: $bp-small) {
+		padding: 10rem 2rem;
+	}
+	background-color: #3c3c3d;
+	grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+	justify-items: center;
+	align-items: center;
+
+	& h2 {
+		font-weight: 40rem;
+		position: relative;
+
+		@media screen and (max-width: $bp-small) {
+			font-size: 4.5rem;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			margin-top: 1.2rem;
+			height: 0.4rem;
+			bottom: -1rem;
+			right: 0;
+			background-color: #fdb533;
+		}
+	}
+
+	&-content {
+		padding-right: 15rem;
+		@media screen and (max-width: $bp-small) {
+			padding: 4rem 2rem;
+		}
+
+		& p {
+			margin-bottom: 4rem;
+			line-height: 2.5rem;
+		}
+
+		& button {
+			margin: 1rem;
+		}
+	}
+
+	&-buttons {
+		@media screen and (max-width: $bp-small) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+}

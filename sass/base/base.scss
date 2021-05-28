@@ -1,0 +1,45 @@
+// RESPONSIVE BREAKPOINTS
+//1200 / 16:
+$bp-largest: 75em; //1200px
+//800 / 16 :
+$bp-medium: 50em; // 800px
+//656 / 16
+$bp-small: 41em; // 656px
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+body {
+	box-sizing: border-box;
+}
+
+/* this defines what 1 rem is 
+1 rem = 10px; 10px/16px (default browser) = 62.5% */
+html {
+	font-size: 62.5%;
+
+	@media only screen and (max-width: $bp-largest) {
+		font-size: 50%;
+	}
+}
+
+/* grid layout for the whole page 
+12 grid layout with 2 extra columns for centering content
+1140 / 12 to get 95 px for one column*/
+.page-container {
+	display: grid;
+	/* justify-content: center; */
+	grid-template-columns:
+		[full-start] 1fr [center-start] repeat(
+			12,
+			[col-start] minmax(min-content, 9.5rem) [col-end]
+		)
+		[center-end] 1fr [full-end];
+
+	grid-template-rows: 20rem, repeat(3, auto), 40vw, repeat(6, auto);
+}

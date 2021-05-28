@@ -1,0 +1,133 @@
+.services {
+	grid-column: full-start / full-end;
+	padding: 10rem 0;
+	background-color: #2b2c2c;
+
+	@media screen and (max-width: $bp-small) {
+		padding: 10rem 2rem;
+	}
+
+	&-text-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		& h2 {
+			font-weight: 40rem;
+			position: relative;
+			margin-bottom: 5rem;
+
+			@media screen and (max-width: $bp-small) {
+				font-size: 4.5rem;
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				width: 100%;
+				margin-top: 1.2rem;
+				height: 0.4rem;
+				bottom: -1rem;
+				left: 0;
+				background-color: #fdb533;
+			}
+		}
+
+		& p {
+			text-align: center;
+			line-height: 2.5rem;
+		}
+	}
+
+	&-cards {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+		@media screen and (max-width: $bp-small) {
+			grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+		}
+		@media screen and (min-width: $bp-largest) {
+			grid-template-columns: repeat(2, 50rem);
+		}
+
+		justify-items: center;
+		justify-content: center;
+		align-items: center;
+		column-gap: 4rem;
+		row-gap: 4rem;
+		margin-top: 6rem;
+	}
+}
+
+.card {
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	padding: 8rem;
+	transition: transform 0.5s ease;
+
+	&:hover {
+		transform: translateY(-1.5rem) scale(1.03);
+	}
+
+	& h3 {
+		margin: 1.5rem 0;
+		color: white;
+		font-size: 3.2rem;
+	}
+
+	& p {
+		line-height: 3rem;
+		color: white;
+	}
+}
+
+.card1 {
+	background: linear-gradient(
+			to right,
+			rgba(39, 150, 236, 0.9),
+			rgba(39, 150, 236, 0.9)
+		),
+		url('../images/laptop.jpg');
+
+	justify-self: end;
+}
+
+.card2 {
+	background: linear-gradient(
+			to right,
+			rgba(250, 180, 32, 0.9),
+			rgba(250, 180, 32, 0.9)
+		),
+		url('../images/desk.jpg');
+	justify-self: start;
+}
+.card3 {
+	background: linear-gradient(
+			to right,
+			rgba(209, 61, 196, 0.9),
+			rgba(209, 61, 196, 0.9)
+		),
+		url('../images/applicatin.jpg');
+	justify-self: end;
+}
+
+.card4 {
+	background: linear-gradient(
+			to right,
+			rgba(22, 202, 80, 0.9),
+			rgba(22, 202, 80, 0.9)
+		),
+		url('../images/web-design.jpg');
+	justify-self: start;
+}
+
+/* to align the cards in the center when screen smaller than 849px */
+
+@media screen and (max-width: 53em) {
+	.card1,
+	.card2,
+	.card3,
+	.card4 {
+		justify-self: center;
+	}
+}

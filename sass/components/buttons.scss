@@ -1,0 +1,77 @@
+.yellow-button {
+	background-color: #fdb533;
+	font-weight: 500;
+	font-size: 2rem;
+	line-height: 6rem;
+	padding: 0 4rem;
+	width: 22rem;
+	color: white;
+	border: 0.1rem solid #fdb533;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: 0.5s;
+
+	&:hover {
+		background-color: #3c3c3d;
+		color: #fdb533;
+	}
+}
+
+.grey-button {
+	background-color: #3c3c3d;
+	font-weight: 500;
+	font-size: 2rem;
+	line-height: 6rem;
+	padding: 0 4rem;
+	width: 22rem;
+	color: #fdb533;
+	border: 0.1rem solid #fdb533;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: 0.5s;
+
+	&:hover {
+		background-color: #fdb533;
+		color: #3c3c3d;
+	}
+}
+
+//blog buttons
+.btn-more {
+	background-color: #3c3c3d;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 4rem;
+	padding: 0 2rem;
+	width: 15rem;
+	color: #fdb533;
+	border: 0.1rem solid #fdb533;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: 0.5s;
+
+	&:hover {
+		background-color: #fdb533;
+		color: #3c3c3d;
+	}
+}
+
+//back-top-top fixed button, hides when at the top of the page
+.back-to-top {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin: 0.5rem;
+	background-color: #fdb533;
+	border-color: #fdb533;
+	color: #2b2c2c;
+	border-radius: 3px;
+	width: 4rem;
+	height: 4rem;
+	cursor: pointer;
+	transform: translateY(200%);
+	transition: 0.4s ease;
+	&.show {
+		transform: translateY(0);
+	}
+}

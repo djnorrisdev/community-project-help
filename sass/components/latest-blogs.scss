@@ -1,0 +1,150 @@
+.latest-blogs {
+	grid-column: full-start / full-end;
+	padding: 10rem 2rem;
+	background-color: #3c3c3d;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	& h2 {
+		font-weight: 40rem;
+		position: relative;
+		margin-bottom: 5rem;
+
+		@media screen and (max-width: $bp-small) {
+			font-size: 4.5rem;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			margin-top: 1.2rem;
+			height: 0.4rem;
+			bottom: -1rem;
+			left: 0;
+			background-color: #fdb533;
+		}
+	}
+}
+
+.articles {
+	width: 90vw;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+	@media screen and (max-width: $bp-small) {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.article {
+	width: 25vw;
+	@media screen and (max-width: $bp-small) {
+		width: 45vw;
+	}
+	background-color: $color-background-1;
+	border: solid 0.1rem black;
+	margin: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	padding: 2rem;
+	transition: transform 0.5s ease;
+
+	& img {
+		width: 100%;
+		padding-bottom: 1rem;
+	}
+	&:hover {
+		transform: translateY(-1.5rem) scale(1.03);
+	}
+}
+.heading {
+	font-size: 2.5rem;
+}
+
+.blog-text {
+	& p {
+		font-size: 1.5rem;
+		padding-bottom: 1.5rem;
+	}
+}
+.post-info {
+	margin: 0.5rem 0;
+}
+
+//modal pop out styling
+
+.blog-modal-container {
+	background-color: rgba(0, 0, 0, 0.6);
+	display: none;
+	position: fixed;
+	top: 10%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: initial;
+	//modal shown when this class is added. Fade-in animation added below.
+	&.show-blog-modal {
+		display: block;
+	}
+}
+
+.blog-modal {
+	background-color: #fff;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	//places box directly in middle of page
+	transform: translate(-50%, -50%);
+	max-width: 100%;
+	width: 60rem;
+	overflow-y: auto;
+	height: 90vh;
+	animation-name: blogmodalopen;
+	animation-duration: 1s;
+}
+
+.modal-header {
+	background-color: #fdb533;
+	color: white;
+	padding: 1.5rem;
+}
+
+.blog-content {
+	padding: 2rem;
+	color: black;
+}
+
+.post-info {
+	margin: 1.5rem 0;
+	font-size: 1.5rem;
+}
+
+.close-btn {
+	background: transparent;
+	font-size: 2.5rem;
+	font-weight: 800;
+	color: white;
+	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem;
+	cursor: pointer;
+	border: transparent;
+}
+//keyframe for opening modal animation
+@keyframes blogmodalopen {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
