@@ -203,7 +203,7 @@ async function getData(url) {
 		// This was part of your issue. It was rendering modal items on page load. You need it on btn click.
 		// renderModalData(modalNode, data);
 
-		// Below is a way to set the global cache if you wanted to prevent duplicate queries (but you don't need it for this app). It can be destroyed or overwritten as you see fit. A more elegant solution would be setter/getter pattern (also known as pub/sub or observers)
+		// Below is a way to set the global cache if you wanted to prevent duplicate queries. It can be destroyed or overwritten as you see fit. A more elegant solution would be setter/getter pattern (also known as pub/sub or observers). It would make sense to rename testData and the file. Line 265 is where this is used again- you would replace that with a query, but doing so is not optimal for static content.
 		// testData.data = data
 
 	} catch (error) {
